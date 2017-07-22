@@ -24,10 +24,10 @@ Email: claudineisbezerra@gmail.com
 Password: [private]
 
 >>Heroku Created App
-https://agile-gorge-85589.herokuapp.com/ | https://git.heroku.com/agile-gorge-85589.git
+https://dry-caverns-83776.herokuapp.com/ | https://git.heroku.com/dry-caverns-83776.git
 
 >> Git commands to verify and deploy
-git remote
+git remote -v
 git push heroku master
 
 FRAMEWORKS
