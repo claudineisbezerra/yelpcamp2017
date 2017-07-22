@@ -26,9 +26,14 @@ var commentRoutes    = require("./routes/comments"),
 
 //Uses ENV variable to connect to DB.
 // i.e: export export DATABASEURL=mongodb://claudineisbezerra:just4now@ds117093.mlab.com:17093/yelpcamp-db
-var URL = process.env.DATABASEURL || "mongodb://localhost/yelpcamp-db"
-console.log("DATABASEURL: "+URL);
-mongoose.connect(URL, {useMongoClient: true});
+
+var URI = process.env.DATABASEURL || "mongodb://localhost/yelpcamp-db"
+var options = { promiseLibrary: require('bluebird'), useMongoClient: true };
+mongoose.Promise =    require("bluebird")
+console.log("DATABASEURL: "+URI);
+//mongoose.connect(URI, {promiseLibrary: require('bluebird'), useMongoClient: true});
+mongoose.connect(URI, {promiseLibrary: require('bluebird'), useMongoClient: true});
+//mongoose.createConnection(URI, options);
 
 
 app.use(bodyParser.urlencoded({extended: true}));
