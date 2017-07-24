@@ -1,5 +1,21 @@
 IDE ON CLOUD9
 ================
+>>Created an NodeJs App and package.json file
+npm init --yes
+
+>> Clones a repository from a source (in this case GitHub)
+git clone https://github.com/claudineisbezerra/yelpcamp.git
+
+>> Creates reference to github REPO and updates in REPO
+git remote -v
+git remote add origin https://github.com/claudineisbezerra/yelpcamp.git
+git add [filename filename filename ]
+git commit -m "Description of a change"
+git push -u origin master
+    Username for 'https://github.com': claudineisbezerra@gmail.com
+    PPassword for 'https://claudineisbezerra@gmail.com@github.com': [Private]
+    
+
 
 DATABASE ON MLAB
 ================
@@ -30,9 +46,24 @@ https://dry-caverns-83776.herokuapp.com/ | https://git.heroku.com/dry-caverns-83
 git remote -v
 git push heroku master
 
+>> Check heroku logs
+heroku logs --tail
+
+>>Ensure that at least one instance of the app is running
+heroku ps:scale web=1
+
+>> Opp App on given URL (Just eqquivalent a refresh)
+heroku open
+
+>>Scale Up and Down your App by changing Dyno Amount
+heroku ps:scale web=0
+heroku ps:scale web=1
+heroku ps:scale web=2
+
+
 FRAMEWORKS
 ===========
-
+>>Instal dependency libs
 npm install body-parser --save
 npm install connect-flash --save
 npm install ejs --save
