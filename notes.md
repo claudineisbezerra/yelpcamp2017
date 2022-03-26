@@ -4,18 +4,17 @@ IDE ON CLOUD9
 npm init --yes
 
 >> Clones a repository from a source (in this case GitHub)
-git clone https://github.com/claudineisbezerra/yelpcamp.git
+git clone https://github.com/claudineisbezerra/yelpcamp2017.git
 
 >> Creates reference to github REPO and updates in REPO
 git remote -v
-git remote add origin https://github.com/claudineisbezerra/yelpcamp.git
+git remote add origin https://github.com/claudineisbezerra/yelpcamp2017.git
 git add [filename filename filename ]
 git commit -m "Description of a change"
 git push -u origin master
-    Username for 'https://github.com': claudineisbezerra@gmail.com
-    PPassword for 'https://claudineisbezerra@gmail.com@github.com': [Private]
+    Username for 'https://github.com/claudineisbezerra/': claudineisbezerra@gmail.com
+    Password for 'https://github.com/claudineisbezerra/': [Private]
     
-
 
 DATABASE ON MLAB
 ================
